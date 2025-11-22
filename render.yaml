@@ -1,0 +1,6 @@
+services:
+  - type: web
+    name: nyc-crashes-dashboard
+    env: python
+    buildCommand: pip install -r requirements.txt
+    startCommand: gunicorn app:server
